@@ -1,10 +1,10 @@
 <!--bandeau acceuil-->
-body, html, header, h1{
-    margin: 0px;
-    padding: 0px;
+header, h1{
+    margin: 5px;
+    padding: 5px;
 }
 
-header, body, html{
+header{
     width: 100%;
     height: 100%;
 }
@@ -19,14 +19,20 @@ height: 15%;
     text-align:center;
     color: aliceblue;
     text-transform: capitalize;
+    margin-top: -8%;
+}
+
+.titre2{
+    text-align:center;
+    color: aliceblue;
+    text-transform: capitalize;
 }
 
 <!--logo-->
 #logo{
-    position:absolute;
-    top: 2px;
-    left: 10px
-}
+    height: 10%;
+    width: 10%;
+}   
 
 <!--Menu déroulent-->
 
@@ -144,6 +150,18 @@ body{color: :lime;}
 <!--lien reseaux sociaux-->
 
 #facebook{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+#Instagram{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+#Linkid{
     position: absolute;
     top: 0px;
     right: 60px;
