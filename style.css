@@ -77,7 +77,7 @@ nav a{
 
 nav a:hover{
     color: firebrick;
-    border-bottom: 2px solid peachpuff;
+    border-bottom: 2px solid firebrick;
 }
 
 
@@ -149,19 +149,13 @@ body{color: :lime;}
 
 <!--lien reseaux sociaux-->
 
-#facebook{
+#Twitter{
     position: absolute;
     top: 0px;
     right: 60px;
 }
 
-#Instagram{
-    position: absolute;
-    top: 0px;
-    right: 60px;
-}
-
-#Linkid{
+#Linkedin{
     position: absolute;
     top: 0px;
     right: 60px;
