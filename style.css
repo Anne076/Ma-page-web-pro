@@ -70,7 +70,7 @@ nav ul::after{
 nav a{
     display: block;
     text-decoration: none;
-    color: rgb(247, 243, 243);
+    color: rgb(247, 243+8228+ 243);
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
@@ -83,69 +83,68 @@ nav a:hover{
 
 
 <!--Caroussel-->
-#slide
-{width: 80%; max-width: 1000 px;}
 
-#slider figure{
-position: relative;
-width: 500%;
-margin: 0;
-padding: 0;
-font-size: 0;
-text-align: left;
-      }
+#slider 
+{ width: 80%; max-width: 1000px; } 
 
- div #slider figure img{
-width: 20%;
-height: auto;
-left: 0;
-float: left;
--webkit-transform: none;
-transform: none;
-}
+     #slider figure 
+     {
+       position: relative; 
+       width: 500%;
+       margin: 0;
+       padding: 0;
+       font-size: 0;
+       text-align: left;
+     }
 
-@keyframes slidy 
+div#slider figure img 
 {
-      0% {left: 0%;}
-      20% {left: 0%;}
-      25% {left: -100%;}
-      45% {left: -100%;}
-      50% {left: -200%;}
-      70% {left: -200%;}
-      75% {left: -300%;}
-      95% {left: -300%;}
-      100% {left: -400%;}
-}
+   width: 20%;
+   height: auto;
+   left: 0;
+   float: left;
+   -webkit-transform: none;
+   transform: none;
+ }
 
-div #slider figure{
-position: relative;
-width: 500%;
-margin: 0;
-padding: 0;
-font-size: 0;
-left: 0;
-text-align: left;
-animation: 30 s Infinite Slidy;
-}
+ @keyframes slidy 
+ {
+     0% { left: 0%; }
+     20% { left: 0%; }
+     25% { left: -100%; }
+     45% { left: -100%; }
+     50% { left: -200%; }
+     70% { left: -200%; }
+     75% { left: -300%; }
+     95% { left: -300%; }
+     100% { left: -400%; }
+ }
 
-div #slider
-{width: 80%; max-width: 1000 px; overflow: hidden}
-
-img
-{max-width: 1000 px}
-
-p
+div#slider figure 
 {
-text-align: center;
+ position: relative;
+ width: 500%;
+ margin: 0;
+ padding: 0;
+ font-size: 0;
+ left: 0;
+ text-align: left;
+ animation: 30s slidy infinite;
 }
 
-#slide
+div#slider 
+{ width: 80%; max-width: 1000px; overflow: hidden }
+
+.picture
+{max-width: 1000px}
+
+#slider
 {
-margin-left: auto;
-margin-right: auto;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-body{color: :lime;}
+
 
 <!--lien reseaux sociaux-->
 
@@ -154,9 +153,25 @@ body{color: :lime;}
     top: 0px;
     right: 60px;
 }
+#logotwitter{
+    width:50px;
+    height:50px; 
 
+}
 #Linkedin{
     position: absolute;
     top: 0px;
     right: 60px;
+}
+#logolinkedin{
+    width:50%;
+    height:50%;  
+}
+#resi{
+    width:50%;
+    height:50%;   
+}
+#past{
+    width:50%;
+    height:50%;  
 }
