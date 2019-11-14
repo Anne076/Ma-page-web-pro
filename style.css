@@ -1,6 +1,8 @@
 <!--bandeau acceuil-->
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif;
+}
 
 header, h1{
     margin: 5px;
@@ -35,8 +37,8 @@ height: 15%;
 
 <!--logo-->
 #logo{
-    height: 10%;
-    width: 10%;
+    height: 50%;
+    width: 50%;
 }   
 
 <!--Menu déroulent-->
@@ -85,7 +87,19 @@ nav a:hover{
     border-bottom: 2px solid firebrick;
 }
 
-
+#histoire{
+font-family: 'Quicksand', sans-serif ;
+background-color:burlywood;
+width: 750px;
+min-width: 400px;
+text-align: justify;
+color: white;
+padding: 50px;
+margin: 100px;
+position: absolute;
+top: 150px;
+right: -100px;
+}
 
 <!--Caroussel-->
 
@@ -151,32 +165,16 @@ div#slider
 
 
 
-<!--lien reseaux sociaux-->
+/*lien reseaux sociaux*/
 
-#Twitter{
-    position: absolute;
-    top: 0px;
-    right: 60px;
-}
-#logotwitter{
-    width:50px;
-    height:50px; 
 
+.reseauxsociaux {
+    display: flex;
+    flex-direction: row;
 }
-#Linkedin{
-    position: absolute;
-    top: 0px;
-    right: 60px;
+#twitter{
+    width: 2.5%;
 }
-#logolinkedin{
-    width:50%;
-    height:50%;  
-}
-#resi{
-    width:50%;
-    height:50%;   
-}
-#past{
-    width:100%;
-    height:50%;  
+#linkedin{
+    width: 2.5%;
 }
