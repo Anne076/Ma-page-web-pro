@@ -1,4 +1,7 @@
 <!--bandeau acceuil-->
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 header, h1{
     margin: 5px;
     padding: 5px;
@@ -16,6 +19,8 @@ height: 15%;
 }
 
 .titre{
+    font-family: "Quicksand";
+    font-weight: 700;
     text-align:center;
     color: firebrick;
     text-transform: capitalize;
