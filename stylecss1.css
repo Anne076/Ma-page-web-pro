@@ -32,11 +32,22 @@
 .six {
   grid-column: 3;
   grid-row: 4;
-  background: teal;
+  background: rgb(87, 0, 128);
 }
 .seven {
+    grid-column: 3;
+    grid-row: 4;
+    background: yellowgreen;
+}
 
+.eight {
+  grid-column: 3;
+  grid-row: 4;
+  background: lavender;
+}
 
-
-    
- }
+.nine {
+  grid-column: 3;
+  grid-row: 4;
+  background:navy;
+}

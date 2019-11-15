@@ -4,58 +4,13 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
-header, h1{
-    margin: 5px;
-    padding: 5px;
-}
+nav#menu{
 
-header{
-    width: 100%;
-    height: 100%;
-}
-
-body> header{
-background-color: rgb(238, 184, 136);
-width: 100%;
-height: 15%;
-}
-
-.titre{
-    font-family: "Quicksand";
-    font-weight: 700;
-    text-align:center;
-    color: firebrick;
-    text-transform: capitalize;
-    margin-top: -8%;
-}
-
-.titre2{
-    text-align:center;
-    color: firebrick;
-    text-transform: capitalize;
-}
-
-<!--logo-->
-#logo{
-    height: 50%;
-    width: 50%;
-}   
-
-<!--Menu déroulent-->
-
-*{
-    margin:0px;
-    padding: 0px;
-    font-family: Avenir, sans-serif;
-}
-
-nav{
-
-    width: 100%;
     margin: 0 auto;
     background-color: rgba(243, 115, 64, 0.884);
     position: sticky;
     top: 0px;
+    height:100px;
 }
 
 nav ul{
@@ -82,29 +37,72 @@ nav a{
     padding: 10px 0px;
 }
 
+#grille{
+    background-color: olivedrab;
+    border-width: 5px;
+}
+
 nav a:hover{
     color: firebrick;
     border-bottom: 2px solid firebrick;
 }
 
+
+
+header, h1{
+    margin: 5px;
+    padding: 5px;
+}
+
+header#tete{
+}
+
+body> header{
+    background-color: rgb(238, 184, 136);
+
+}
+
+.titre{
+    font-family: "Quicksand";
+    font-weight: 700;
+    text-align:center;
+    color: firebrick;
+    text-transform: capitalize;
+}
+
+.titre2{
+    text-align:center;
+    color: firebrick;
+    text-transform: capitalize;
+}
+
+<!--logo-->
+#logo{
+    height: 50%;
+    width: 50%;
+}   
+
+<!--Menu déroulent-->
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+
+
 #histoire{
 font-family: 'Quicksand', sans-serif ;
 background-color:burlywood;
-width: 750px;
-min-width: 400px;
 text-align: justify;
 color: white;
 padding: 50px;
-margin: 100px;
-position: absolute;
-top: 150px;
-right: -100px;
+
 }
 
 <!--Caroussel-->
 
-#slider 
-{ width: 80%; max-width: 1000px; } 
 
      #slider figure 
      {
@@ -178,3 +176,35 @@ div#slider
 #linkedin{
     width: 2.5%;
 }
+
+@media (min-width: 720px) { 
+    #corps{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+
+    #profil{
+        grid-column: 1 / 2;
+        grid-row: 1 /2;
+    }
+
+    #histoire{
+        grid-column: 2 / 3;
+        grid-row: 1 /4;
+    }
+
+    #citation{
+        grid-column: 1 / 2;
+        grid-row: 2 /3;   
+     }
+
+     #cv{
+         grid-column: 1/2;
+         grid-row: 3/4;;
+     }
+
+     #production{
+         grid-column: 1/-1;
+         grid-row: 4/5;
+     }
+ }
