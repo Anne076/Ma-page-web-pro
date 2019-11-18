@@ -16,10 +16,11 @@ body{
 nav#menu{
 
     margin: 0 auto;
-    background-color: rgba(243, 115, 64, 0.884);
+    background-color: purple;
     position: sticky;
     top: 0px;
     height:100px;
+    border-radius: 70px;
 }
 
 nav ul{
@@ -41,9 +42,10 @@ nav ul::after{
 nav a{
     display: block;
     text-decoration: none;
-    color: rgb(247, 243+8228+ 243);
+    color: white;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
+    padding-top: 40px;
 }
 
 #grille{
@@ -52,8 +54,8 @@ nav a{
 }
 
 nav a:hover{
-    color: firebrick;
-    border-bottom: 2px solid firebrick;
+    color:gold;
+    
 }
 
 
@@ -88,7 +90,7 @@ header > h1{
 }
 
 body> header{
-    background-color: rgb(238, 184, 136);
+    background-color: whitesmoke;
 
 }
 
@@ -105,6 +107,20 @@ body> header{
     color: firebrick;
     text-transform: capitalize;
 }
+.cita{
+    padding-bottom: 10%;
+    font-size: 1.2em;
+}
+.curi{
+    font-size: 1.2em;    
+    padding-bottom: 10%;
+
+}
+.histo{
+
+    font-size: 1.2em;    
+    padding-bottom: 2em;  
+}
 
 #profil, #cv, #citation, #production, #Contact{
     padding-left: 10px;
@@ -120,11 +136,14 @@ body> header{
     font-family: Avenir, sans-serif;
 }
 
-
+h2{
+    color: purple; 
+  font-size: 2.5em;      
+}
 
 #histoire{
 font-family: 'Quicksand', sans-serif ;
-background-color:burlywood;
+background-color:rgb(241, 175, 88);
 text-align: justify;
 color: white;
 padding: 50px;
@@ -199,17 +218,19 @@ div#slider
 /*lien reseaux sociaux*/
 
 footer{
-    background: crimson;
+    background: purple;
     background-size: cover;
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 70px;
+    padding-top: 70px;
 }
 #Contact{
     grid-row-start: 1;
     grid-row-end: 1;
     justify-self: center;
     align-self: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
 
@@ -236,10 +257,12 @@ footer{
 
 #Cont, #credit{
     text-align: center;
+    color: white;
 }
 
 #Contact > p{
     text-align: center;
+    color: white;
 }
 
 @media (min-width: 720px) { 
@@ -271,5 +294,11 @@ footer{
      #production{
          grid-column: 1/-1;
          grid-row: 4/5;
+     }
+
+     .accroche{
+        grid-column: 1/-1;
+        grid-row: 4/5;
+
      }
  }
