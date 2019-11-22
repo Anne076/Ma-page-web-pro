@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Quicksand', sans-serif ;
 }
 
 img{
@@ -138,7 +139,7 @@ h2{
 }
 
 #histoire{
-font-family: 'Quicksand', sans-serif ;
+
 background-color:rgb(241, 175, 88);
 text-align: justify;
 color: white;
