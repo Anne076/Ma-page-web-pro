@@ -8,11 +8,9 @@ img{
     width:100%;
 }
 
-<!--bandeau acceuil-->
 
 body{
-    font-family: 'Quicksand', sans-serif;
-    
+    font-family: 'Quicksand', sans-serif;   
 }
 
 nav#menu{
@@ -23,7 +21,7 @@ nav#menu{
     z-index: 999;
     top: 0px;
     height:100px;
-    border-radius: 70px;
+   
 }
 
 nav ul{
@@ -62,7 +60,6 @@ nav a:hover{
 }
 
 
-
 header > h1{
     margin: 5px;
     padding: 5px;
@@ -83,10 +80,16 @@ header > h1{
     width: 230px;
     }
 
+#nom{
+    font-style:bold;
+}
 
-.accroche{
+#slogan{
+    font-style: italic;
+}
 
-
+#objectif{
+    font-style: normal;
 }
 
 body> header{
@@ -108,10 +111,10 @@ body> header{
     text-transform: capitalize;
 }
 .cita{
-    padding-bottom: 10%;
+    padding-bottom: 2em;
 }
 .curi{
-    padding-bottom: 10%;
+    padding-bottom: 2em;
 
 }
 .histo{
@@ -122,10 +125,10 @@ body> header{
 #profil, #cv, #citation, #production, #Contact{
     padding-left: 10px;
 }
-<!--logo-->
 
-
-<!--Menu déroulent-->
+#profil{
+    background-color: purple;
+}
 
 *{
     margin:0px;
@@ -140,22 +143,43 @@ h2{
 
 #histoire{
 
-background-color:rgb(241, 175, 88);
+background-color:rgba(255, 176, 5, 0.671);
 text-align: justify;
-color: white;
+color:purple;
 padding: 50px;
-
 }
 
+#citation{    
+    background-color:rgba(255, 176, 5, 0.571);
+    text-align: justify;
+    color: purple;
+    padding: 50px;
+}
+
+#anne{
+    background-color: purple;
+}
+#Cv{
+
+    background-color:rgba(255, 176, 5, 0.471);
+    text-align: justify;
+    color: purple;
+    padding: 50px;
+    }
+    
 #profil > h2{
 display: none;
 }
 
-<!--Caroussel-->
+i{
+    font-style: oblique 30deg;
+}
 
+#auteur{
+    font-style: oblique 30deg; 
+}
 
-     #slider figure 
-     {
+     #slider figure {
        position: relative; 
        z-index: 1;
        width: 500%;
@@ -197,7 +221,7 @@ div#slider figure
  font-size: 0;
  left: 0;
  text-align: left;
- animation: 30s slidy infinite;
+ animation: 15s slidy infinite;
 }
 
 div#slider 
@@ -213,25 +237,22 @@ div#slider
 }
 
 .accroche > h2{
-    color: orangered;
+    color: purple;
 }
 
 .accroche > h1,h3{
     color: purple;
 }
 
-.accr
-
-/*lien reseaux sociaux*/
 
 footer{
     background: purple;
     background-size: cover;
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 70px;
     padding-top: 70px;
 }
+
 #Contact{
     grid-row-start: 1;
     grid-row-end: 1;
@@ -299,26 +320,31 @@ footer{
     }
 
     #histoire{
-        grid-column: 2 / 3;
-        grid-row: 1 /4;
+        grid-column: 2/ -2;
+        grid-row: 1 /-1;
     }
 
+    
+    #cv{
+        grid-column: 1/1;
+        grid-row: /5;
+   }
     #citation{
-        grid-column: 1 / 2;
-        grid-row: 2 /3;   
-     }
+        grid-column: 1 /1;
+        grid-row: 2/5;   
+    }
 
-     #cv{
-         grid-column: 1/2;
-         grid-row: 3/4;;
-     }
-
-     #production{
+     #Caroussel{
          grid-column: 1/-1;
          grid-row: 4/5;
-     }
+    }
 
-     .accroche{
-
-     }
- }
+#anne{
+    grid-column: 1 /1;
+    grid-row: 1/2; 
+}
+    
+    #footer{
+        grid-column: 1/-1;
+        grid-row: /5;
+   }
