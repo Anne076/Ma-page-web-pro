@@ -127,7 +127,11 @@ body> header{
 }
 
 #profil{
-    background-color: purple;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 0;
 }
 
 *{
@@ -158,6 +162,7 @@ padding: 50px;
 
 #anne{
     background-color: purple;
+ 
 }
 #Cv{
 
@@ -342,6 +347,8 @@ footer{
 #anne{
     grid-column: 1 /1;
     grid-row: 1/2; 
+    justify-self: center;
+    align-self: center;
 }
     
     #footer{
