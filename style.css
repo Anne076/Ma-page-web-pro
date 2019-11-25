@@ -398,7 +398,7 @@ footer{
     }
 
     #menu > ul{
-        background: purple;
+        background: rgb(128, 0, 128, .8);
         background-size: cover;
         height: auto;
         flex-flow: column;
