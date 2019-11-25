@@ -7,6 +7,17 @@
 img{
     width:100%;
 }
+p{
+    font-size: 1.4em;
+}
+@media(max-width:425px)
+{
+    p{
+        font-size: 1em;
+    }
+}
+
+
 
 
 body{
